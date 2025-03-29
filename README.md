@@ -1,36 +1,35 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Airbnb Scraper & Clone
 
-## Getting Started
+This project is a full-stack solution for scraping Airbnb listings and displaying them via a Next.js frontend. The project consists of three main parts:
 
-First, run the development server:
+1. **Django Backend with Django REST Framework:**  
+   Provides RESTful APIs to insert and retrieve Airbnb listings stored in a MySQL database.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+2. **Scrapy Scraper:**  
+   Scrapes Airbnb listings (using dummy data for demonstration) and posts the data to the Django backend.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+3. **Next.js Frontend with Tailwind CSS:**  
+   Displays listings retrieved from the Django backend. Includes a search results page and dynamic listing detail pages.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+> **Note:** Real-world scraping of Airbnb is complex and subject to legal and technical restrictions. This project uses simplified dummy data for demonstration purposes.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## Table of Contents
 
-To learn more about Next.js, take a look at the following resources:
+- [Project Structure](#project-structure)
+- [Prerequisites](#prerequisites)
+- [Setup Instructions](#setup-instructions)
+  - [Django Backend](#django-backend)
+  - [Scrapy Scraper](#scrapy-scraper)
+  - [Next.js Frontend](#nextjs-frontend)
+- [Running the Project](#running-the-project)
+- [API Endpoints](#api-endpoints)
+- [CORS & Routing](#cors--routing)
+- [Additional Information](#additional-information)
+- [License](#license)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Project Structure
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
