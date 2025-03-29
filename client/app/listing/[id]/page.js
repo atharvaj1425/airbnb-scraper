@@ -6,7 +6,7 @@ export default async function ListingDetail({ params }) {
   const { id } = params;
 
   // For demo, fetch all listings and filter; ideally, use a dedicated endpoint.
-  const res = await fetch('http://127.0.0.1:8000/api/listings/', { cache: 'no-store' });
+  const res = await fetch('http://localhost:8000/api/listings/', { cache: 'no-store' });
   if (!res.ok) {
     throw new Error('Failed to fetch listings');
   }

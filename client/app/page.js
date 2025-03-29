@@ -5,7 +5,7 @@ import Link from 'next/link';
 // This function runs on the server at build or request time
 async function getListings() {
   // Replace with your Django backend URL if needed
-  const res = await fetch('http://127.0.0.1:8000/api/listings/', { cache: 'no-store' });
+  const res = await fetch('http://localhost:8000/api/listings/', { cache: 'no-store' });
   if (!res.ok) {
     throw new Error('Failed to fetch listings');
   }
