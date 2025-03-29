@@ -1,8 +1,4 @@
-Below is an example README that covers the full project—including the Django backend, the Scrapy scraper, and the Next.js client.
 
----
-
-```markdown
 # Airbnb Scraper & Clone
 
 This project is a full-stack solution for scraping Airbnb listings and displaying them via a Next.js frontend. The project consists of three main parts:
